@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.toggleSwitch{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.themeText{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+.custom{
+	color: white;
+}
+
+h1{
+	font-family: 'Lobster', cursive;
+	font-size: 4rem;
+	margin: 6px 0;
+}
+
+.dark-mode {
+	background-color: black;
+}
+
+
+.dark-mode h1 {
+	color: white;
+}
+
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #b6ffa7;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #b6ffa7;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #797979;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	padding: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	border: 1.5px solid #797979;
+}
+
+.save:hover {
+	background-color: #ededed;
+	color: #797979;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #8af0fe;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	padding: 15px;
+	background-color: rgb(255, 133, 133);
+	border: 2px solid rgb(255, 133, 133);
+	border-radius: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: rgb(255, 255, 255)
+}
+
+.delete-icon:hover {
+	background-color: rgb(255, 106, 106);
+	border: 2px solid rgb(255, 106, 106);
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 1rem 4rem;
+	font-size: 1rem;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0.2rem auto 1.5rem auto;
+	max-width: 550px;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+}
+
+.search input:focus {
+	outline: none;
+}
